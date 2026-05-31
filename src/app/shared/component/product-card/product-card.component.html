@@ -1,0 +1,9 @@
+<div class="card mb-4">
+    <div class="card-header">{{productobj.pName}}</div>
+    <div class="card-body">{{productobj.pInfo}} <strong>{{productobj.pStatus}}</strong></div>
+    <div class="card-footer d-flex justify-content-between">
+        <button class="btn btn-sm btn-info" (click)="onUpdated(productobj ,'InProgress')" [disabled]="productobj.pStatus==='InProgress'" >InProgress</button>
+        <button class="btn btn-sm btn-info" (click)="onUpdated(productobj ,'Dispatched')" [disabled]="productobj.pStatus==='Dispatched'">Dispatched</button>
+        <button class="btn btn-sm btn-info" (click)="onUpdated(productobj ,'Delivered')"[disabled]="productobj.pStatus==='Delivered'">Delivered</button>
+    </div>
+</div>
