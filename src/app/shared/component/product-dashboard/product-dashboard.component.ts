@@ -29,6 +29,10 @@ export class ProductDashboardComponent implements OnInit {
 
   }
 
+  trackByFun(index : number , item : Iproduct){
+    return item.pId;
+  }
+
   
 
 }

@@ -5,7 +5,7 @@
 </div>
 <div class="row">
     <div class="col-md-8 offset-md-2">
-        <app-product-card *ngFor="let product of getAllProducts"
+        <app-product-card *ngFor="let product of getAllProducts ; trackBy trackByFun"
         [productobj]="product"></app-product-card>
     </div>
 </div>
